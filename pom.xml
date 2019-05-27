@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.peng</groupId>
-  <artifactId>hadoop-demo-20170923</artifactId>
+  <artifactId>hadoop</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>hadoop-demo-20170923 Maven Webapp</name>
