@@ -5,7 +5,7 @@
   <artifactId>hadoop</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>hadoop-demo-20170923 Maven Webapp</name>
+  <name>hadoop Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
   	<hadoop-version>2.7.3</hadoop-version>
@@ -70,6 +70,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>hadoop-demo-20170923</finalName>
+    <finalName>hadoop</finalName>
   </build>
 </project>
