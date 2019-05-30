@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,16 +12,17 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-
-<!-- Put site-specific property overrides in this file. -->
-
 <configuration>
-	<property>
-       <name>mapreduce.framework.name</name>
-       <value>yarn</value>
+    <property>
+       <name>yarn.nodemanager.aux-services</name>
+       <value>mapreduce_shuffle</value>
     </property>
     <property>
-    	<name>mapred.job.tracker</name>
-    	<value>192.168.8.101:9001</value>
+       <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+    <property>
+      <name>yarn.resourcemanager.hostname</name>
+      <value>192.168.8.101</value>
     </property>
 </configuration>

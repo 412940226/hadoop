@@ -17,8 +17,18 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+    <!-- 指定HDFS老大（namenode）的通信地址 -->
     <property>
-        <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
+	    <name>fs.defaultFS</name>
+	    <value>hdfs://192.168.8.101:9000</value>
+    </property>
+    <!-- 指定hadoop运行时产生文件的存储路径 -->
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/opt/hadoop-2.7.3/data/tmp</value>
+    </property>
+    <property>
+      <name>dfs.permissions</name>
+      <value>false</value>
     </property>
 </configuration>
